@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PageProgress from 'react-page-progress';
 import Slider from './Slider';
 import LatestProjects from './LatestProjects';
 import Statistics from './Statistics';
@@ -54,6 +55,8 @@ export default class Home extends Component {
         ];
         return (
             <div>
+
+                <PageProgress />
                 <Slider slides={slides} />
                 <LatestProjects  />
                 <Statistics  />

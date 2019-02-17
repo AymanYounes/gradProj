@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import './Services.css';
-import services_icon from './../../Assets/Images/services_icon.jpg';
+import './Ideas.css';
 import Footer from './../Home/Footer';
 
 
 
-export default class ServicesDetails extends Component {
+export default class ProjectsDetails extends Component {
 
     constructor(props){
         super(props);
@@ -15,14 +14,10 @@ export default class ServicesDetails extends Component {
             details: {}
         }
     }
-    getService() {
+    getProject() {
 
-        axios.get('/api/services/' + this.props.params.id )
+        axios.get('/api/projects/' + this.props.params.id )
             .then(response => {
-                // let image = btoa(
-                //     new Uint8Array(response.data)
-                //         .reduce((data, byte) => data + String.fromCharCode(byte), '')
-                // );
                 this.setState({
                     details: response.data,
                     myImage: require("./../../Assets/Images/"+response.data.image),
@@ -36,7 +31,7 @@ export default class ServicesDetails extends Component {
 
 
     componentDidMount(){
-        this.getService();
+        this.getProject();
     }
 
     render() {
@@ -46,15 +41,15 @@ export default class ServicesDetails extends Component {
                 <div className="container">
                     <img src = {this.state.myImage} className="img-responsive" width={"100%"} height={"200px"}/>
 
-                    <h1>{this.state.details.title}</h1>
+                    <h1>{this.state.details.title}
+                        <small className={ "card--tip "+ ((this.state.details.process == 1)?"green" : "blue")}>
+                            ({(this.state.details.process == 1)?"مشروع جاهز" : "يتم بناءه عند الرغبة"})
+                        </small>
+                    </h1>
                     <p>{this.state.details.description}</p>
                 </div>
                 <Footer />
             </div>
         );
     }
-}
-
-if (document.getElementById('example')) {
-    ReactDOM.render(<ServicesDetails />, document.getElementById('example'));
 }

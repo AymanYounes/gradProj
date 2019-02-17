@@ -23,7 +23,7 @@ export default class InnerNavbar extends Component {
                                 <NavLink to="/services" className="nav-link"> خدماتنا <span className="sr-only">(current)</span> </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/project-ideas" className="nav-link"> أفكار مشاريع <span className="sr-only">(current)</span> </NavLink>
+                                <NavLink to="/projects" className="nav-link"> أفكار مشاريع <span className="sr-only">(current)</span> </NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to="/who-we-are" className="nav-link"> من نحن <span className="sr-only">(current)</span> </NavLink>

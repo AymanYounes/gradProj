@@ -1,0 +1,67 @@
+$my-brand-color: #8BC3A3;
+
+
+$primary-color: $my-brand-color;
+@import 'loaders.css/src/animations/ball-rotate.scss';
+//@import "node_modules/react-progress-2/main.css";
+
+
+
+.loader-hidden, .loader-holder-hidden{
+    display: none;
+}
+.loader-active, .loader-holder-active{
+    display: block;
+}
+
+//
+//.loader-holder{
+//    width: 100%;
+//    position: fixed;
+//    height: 100%;
+//    background: white;
+//    z-index: 1000;
+//}
+//
+//.loader_icon, .loader-active{
+//    position: absolute;
+//    top: 50%;
+//    left: 50%;
+//}
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Tajawal','Cairo', sans-serif;
+    /*background: #2A2C2E;*/
+}
+
+
+
+.header_under_line{
+    width: 70px;
+    height: 10px;
+    background: #8BC3A3;
+    margin-bottom: 10px;
+}
+
+.center{
+    text-align: center;
+    margin: 0 auto;
+}

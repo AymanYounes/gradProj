@@ -1,0 +1,39 @@
+.after_header{
+    padding: 50px 0;
+    direction: rtl;
+}
+
+.after_header h1{
+    width: 90%;
+    text-align: right;
+}
+.after_header p{
+    direction:rtl;
+    text-align: justify;
+
+}
+
+
+.direction_l{
+    direction:ltr;
+    text-align: justify;
+}
+.direction_r{
+    direction:rtl;
+    text-align: justify;
+}
+
+
+.service_section{
+    background-image: url("./../../../Assets/Images/bg-pattern.jpg");
+    background-size: cover;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+
+.service-img{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+}

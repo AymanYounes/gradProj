@@ -1,41 +1,19 @@
-$my-brand-color: #8BC3A3;
+/*
+================================
+main variables
+================================
+*/
 
-
-$primary-color: $my-brand-color;
-@import 'loaders.css/src/animations/ball-rotate.scss';
-//@import "node_modules/react-progress-2/main.css";
-
-
-
-.loader-hidden, .loader-holder-hidden{
-    display: none;
-}
-.loader-active, .loader-holder-active{
-    display: block;
-}
-
-//
-//.loader-holder{
-//    width: 100%;
-//    position: fixed;
-//    height: 100%;
-//    background: white;
-//    z-index: 1000;
-//}
-//
-//.loader_icon, .loader-active{
-//    position: absolute;
-//    top: 50%;
-//    left: 50%;
-//}
+//brand-color: #ff5050;
+$brand-color: #ff5050;
 
 
 
-
-
-
-
-
+/*
+================================
+general styles
+================================
+*/
 
 * {
     padding: 0;
@@ -57,7 +35,7 @@ html {
 .header_under_line{
     width: 70px;
     height: 10px;
-    background: #8BC3A3;
+    background: #ff5050;
     margin-bottom: 10px;
 }
 
@@ -65,3 +43,70 @@ html {
     text-align: center;
     margin: 0 auto;
 }
+
+
+
+
+
+
+.brand-color{
+    color: #ff5050;
+}
+
+.brand-bg{
+    background: #ff5050;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active{
+    color: #ff5050 !important;
+}
+
+
+
+
+
+
+/*
+================================
+Pre loader
+================================
+*/
+
+$primary-color: $brand-color;
+@import 'loaders.css/src/animations/ball-rotate.scss';
+
+.loader-hidden, .loader-holder-hidden{
+    display: none;
+}
+.loader-active, .loader-holder-active{
+    display: block;
+}
+
+
+/*
+================================
+fade transition in routers
+================================
+*/
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
+
+

@@ -8,6 +8,7 @@ import PageProgress from 'react-page-progress';
 import { Lines ,Circle2 } from 'react-preloaders';
 import MainNavbar from './components/Layouts/Navbar/Navbar';
 import InnerNavbar from './components/Layouts/Navbar/InnerNavbar';
+import NavbarWithHero from './components/Layouts/Navbar/NavbarWithHero';
 import PageRouter from './components/Routes'
 import createHistory from 'history/createBrowserHistory';
 
@@ -27,11 +28,15 @@ export default class Index extends Component {
     }
 
     updateNavBar(nav){
-        (nav === '/' || nav === '' )?
+        (nav === '/' || nav === ''|| nav === '/who-we-are' )?
             this.setState({
                 navbar:<MainNavbar/>
             })
-        :this.setState({
+        :(nav === '/who-we-are')?
+            this.setState({
+                navbar:<NavbarWithHero/>
+            })
+            :this.setState({
                 navbar:<InnerNavbar/>
             })
     }

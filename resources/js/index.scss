@@ -110,3 +110,31 @@ fade transition in routers
 }
 
 
+
+
+/*
+================================
+common inner pages
+================================
+*/
+
+.hero-section{
+    background: url('Assets/Images/inner-bg.jpg');
+    background-size: cover;
+    height: 300px;
+    overflow: hidden;
+    width: 100%;
+    direction: rtl;
+}
+
+
+.inner_header_title{
+    color: #ff5050;
+
+}
+
+
+
+.inner_headers{
+    padding-top: 100px;
+}

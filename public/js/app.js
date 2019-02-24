@@ -6315,12 +6315,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+var escape = __webpack_require__(/*! ../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, "/*\n================================\nmain variables\n================================\n*/\n/*\n================================\ngeneral styles\n================================\n*/\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n  list-style: none;\n}\n\nbody,\nhtml {\n  width: 100%;\n  height: 100%;\n  font-family: \"Tajawal\", \"Cairo\", sans-serif;\n  /*background: #2A2C2E;*/\n}\n\n.header_under_line {\n  width: 70px;\n  height: 10px;\n  background: #ff5050;\n  margin-bottom: 10px;\n}\n\n.center {\n  text-align: center;\n  margin: 0 auto;\n}\n\n.brand-color {\n  color: #ff5050;\n}\n\n.brand-bg {\n  background: #ff5050;\n}\n\n.navbar-dark .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active {\n  color: #ff5050 !important;\n}\n\n/*\n================================\nPre loader\n================================\n*/\n@-webkit-keyframes rotate {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  50% {\n    -webkit-transform: rotate(180deg);\n            transform: rotate(180deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n@keyframes rotate {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  50% {\n    -webkit-transform: rotate(180deg);\n            transform: rotate(180deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n.ball-rotate {\n  position: relative;\n}\n.ball-rotate > div {\n  background-color: #ff5050;\n  width: 15px;\n  height: 15px;\n  border-radius: 100%;\n  margin: 2px;\n  -webkit-animation-fill-mode: both;\n          animation-fill-mode: both;\n  position: relative;\n}\n.ball-rotate > div:first-child {\n  -webkit-animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;\n          animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;\n}\n.ball-rotate > div:before, .ball-rotate > div:after {\n  background-color: #ff5050;\n  width: 15px;\n  height: 15px;\n  border-radius: 100%;\n  margin: 2px;\n  content: \"\";\n  position: absolute;\n  opacity: 0.8;\n}\n.ball-rotate > div:before {\n  top: 0px;\n  left: -28px;\n}\n.ball-rotate > div:after {\n  top: 0px;\n  left: 25px;\n}\n\n.loader-hidden, .loader-holder-hidden {\n  display: none;\n}\n\n.loader-active, .loader-holder-active {\n  display: block;\n}\n\n/*\n================================\nfade transition in routers\n================================\n*/\n.fade-enter {\n  opacity: 0.01;\n}\n\n.fade-enter.fade-enter-active {\n  opacity: 1;\n  transition: opacity 300ms ease-in;\n}\n\n.fade-exit {\n  opacity: 1;\n}\n\n.fade-exit.fade-exit-active {\n  opacity: 0.01;\n  transition: opacity 300ms ease-in;\n}", ""]);
+exports.push([module.i, "/*\n================================\nmain variables\n================================\n*/\n/*\n================================\ngeneral styles\n================================\n*/\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n  list-style: none;\n}\n\nbody,\nhtml {\n  width: 100%;\n  height: 100%;\n  font-family: \"Tajawal\", \"Cairo\", sans-serif;\n  /*background: #2A2C2E;*/\n}\n\n.header_under_line {\n  width: 70px;\n  height: 10px;\n  background: #ff5050;\n  margin-bottom: 10px;\n}\n\n.center {\n  text-align: center;\n  margin: 0 auto;\n}\n\n.brand-color {\n  color: #ff5050;\n}\n\n.brand-bg {\n  background: #ff5050;\n}\n\n.navbar-dark .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active {\n  color: #ff5050 !important;\n}\n\n/*\n================================\nPre loader\n================================\n*/\n@-webkit-keyframes rotate {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  50% {\n    -webkit-transform: rotate(180deg);\n            transform: rotate(180deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n@keyframes rotate {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  50% {\n    -webkit-transform: rotate(180deg);\n            transform: rotate(180deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n.ball-rotate {\n  position: relative;\n}\n.ball-rotate > div {\n  background-color: #ff5050;\n  width: 15px;\n  height: 15px;\n  border-radius: 100%;\n  margin: 2px;\n  -webkit-animation-fill-mode: both;\n          animation-fill-mode: both;\n  position: relative;\n}\n.ball-rotate > div:first-child {\n  -webkit-animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;\n          animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;\n}\n.ball-rotate > div:before, .ball-rotate > div:after {\n  background-color: #ff5050;\n  width: 15px;\n  height: 15px;\n  border-radius: 100%;\n  margin: 2px;\n  content: \"\";\n  position: absolute;\n  opacity: 0.8;\n}\n.ball-rotate > div:before {\n  top: 0px;\n  left: -28px;\n}\n.ball-rotate > div:after {\n  top: 0px;\n  left: 25px;\n}\n\n.loader-hidden, .loader-holder-hidden {\n  display: none;\n}\n\n.loader-active, .loader-holder-active {\n  display: block;\n}\n\n/*\n================================\nfade transition in routers\n================================\n*/\n.fade-enter {\n  opacity: 0.01;\n}\n\n.fade-enter.fade-enter-active {\n  opacity: 1;\n  transition: opacity 300ms ease-in;\n}\n\n.fade-exit {\n  opacity: 1;\n}\n\n.fade-exit.fade-exit-active {\n  opacity: 0.01;\n  transition: opacity 300ms ease-in;\n}\n\n/*\n================================\ncommon inner pages\n================================\n*/\n.hero-section {\n  background: url(" + escape(__webpack_require__(/*! ./Assets/Images/inner-bg.jpg */ "./resources/js/Assets/Images/inner-bg.jpg")) + ");\n  background-size: cover;\n  height: 300px;\n  overflow: hidden;\n  width: 100%;\n  direction: rtl;\n}\n\n.inner_header_title {\n  color: #ff5050;\n}\n\n.inner_headers {\n  padding-top: 100px;\n}", ""]);
 
 // exports
 
@@ -6472,7 +6473,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "* {\n    box-sizing: border-box;\n}\n\nhtml,\nbody {\n    height: 100%;\n}\n\nbody {\n    font: 11px \"Open Sans\", sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    margin: auto;\n    display: flex;\n    flex-flow: column nowrap;\n    justify-content: space-between;\n}\n\nul {\n    list-style: none;\n}\n\na {\n    text-decoration: none;\n}\n\n.generic-anchor {\n    color: #8db9ed;\n}\n.generic-anchor:visited {\n    color: #8db9ed;\n}\n.generic-anchor:hover {\n    color: #ccc;\n}\n\n.flex-rw {\n    display: flex;\n    flex-flow: row wrap;\n    direction: rtl;\n    padding: 20px;\n}\n\nmain {\n    flex: 1 1 auto;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font: 10em \"Oswald\", sans-serif;\n    color: #9b9b9b;\n    line-height: 1;\n}\n\nfooter {\n    /*background: #373737;*/\n    margin-top: auto;\n    width: 100%;\n    background: white;\n    border-top: solid black 2px;\n}\n\nfooter p{\n    text-align: left;\n}\n\n\n.footer-list-top {\n    width: 33.333%;\n    direction: rtl;\n    text-align: justify;\n\n}\n\n.footer-list-top > li {\n    text-align: center;\n    padding-bottom: 10px;\n}\n\n.footer-list-header {\n    padding: 10px 0 5px 0;\n    color: #fff;\n    font: 2.3vw \"Oswald\", sans-serif;\n}\n\n.footer-list-anchor {\n    font: 1.3em \"Open Sans\", sans-serif;\n}\n\n.footer-social-section {\n    width: 100%;\n    align-items: center;\n    justify-content: space-around;\n    position: relative;\n    margin-top: 5px;\n}\n\n.footer-social-section::after {\n    content: \"\";\n    position: absolute;\n    z-index: 1;\n    top: 50%;\n    left: 10px;\n    border-top: 1px solid #ccc;\n    width: calc(100% - 20px);\n}\n\n.footer-social-overlap {\n    position: relative;\n    z-index: 2;\n    background: #373737;\n    padding: 0 20px;\n}\n\n.footer-social-connect {\n    display: flex;\n    align-items: center;\n    font: 3.5em \"Oswald\", sans-serif;\n    color: #fff;\n}\n\n.footer-social-small {\n    font-size: 0.6em;\n    padding: 0px 20px;\n}\n\n.footer-social-overlap > a {\n    font-size: 3em;\n}\n\n.footer-social-overlap > a:not(:first-child) {\n    margin-left: 0.38em;\n}\n\n.footer-bottom-section {\n    width: 100%;\n    padding: 10px;\n    border-top: 1px solid #ccc;\n    margin-top: 10px;\n}\n\n.footer-bottom-section > div:first-child {\n    margin-right: auto;\n}\n\n.footer-bottom-wrapper {\n    font-size: 1.5em;\n    color: #fff;\n}\n\n.footer-address {\n    display: inline;\n    font-style: normal;\n}\n\n@media only screen and (max-width: 768px) {\n    .footer-list-header {\n        font-size: 2em;\n    }\n\n    .footer-list-anchor {\n        font-size: 1.1em;\n    }\n\n    .footer-social-connect {\n        font-size: 2.5em;\n    }\n\n    .footer-social-overlap > a {\n        font-size: 2.24em;\n    }\n\n    .footer-bottom-wrapper {\n        font-size: 1.3em;\n    }\n}\n@media only screen and (max-width: 568px) {\n    main {\n        font-size: 5em;\n    }\n\n    .footer-list-top {\n        width: 100%;\n    }\n\n    .footer-list-header {\n        font-size: 3em;\n    }\n\n    .footer-list-anchor {\n        font-size: 1.5em;\n    }\n\n    .footer-social-section {\n        justify-content: center;\n    }\n\n    .footer-social-section::after {\n        top: 25%;\n    }\n\n    .footer-social-connect {\n        margin-bottom: 10px;\n        padding: 0 10px;\n    }\n\n    .footer-social-overlap {\n        display: flex;\n        justify-content: center;\n    }\n\n    .footer-social-icons-wrapper {\n        width: 100%;\n        padding: 0;\n    }\n\n    .footer-social-overlap > a:not(:first-child) {\n        margin-left: 20px;\n    }\n\n    .footer-bottom-section {\n        padding: 0 5px 10px 5px;\n    }\n\n    .footer-bottom-wrapper {\n        text-align: center;\n        width: 100%;\n        margin-top: 10px;\n    }\n}\n@media only screen and (max-width: 480px) {\n    .footer-social-overlap > a {\n        margin: auto;\n    }\n\n    .footer-social-overlap > a:not(:first-child) {\n        margin-left: 0;\n    }\n\n    .footer-bottom-rights {\n        display: block;\n    }\n}\n@media only screen and (max-width: 320px) {\n    .footer-list-header {\n        font-size: 2.2em;\n    }\n\n    .footer-list-anchor {\n        font-size: 1.2em;\n    }\n\n    .footer-social-connect {\n        font-size: 2.4em;\n    }\n\n    .footer-social-overlap > a {\n        font-size: 2.24em;\n    }\n\n    .footer-bottom-wrapper {\n        font-size: 1.3em;\n    }\n}\n\n\n\n\n.footer_p{\n    font-size:16px;\n    text-align: right;\n    text-align: justify;\n}\n\n\n\n.footer-facebook-btn{\n    width: 50%;\n    float: left;\n    background: #1b4b72;\n    height: 50px;\n    color: #fff;\n}\n\n\n.footer-btn-p{\n    text-align: left;\n    font-size: 22px;\n}\n.footer-btn-p i{\n    width: 30%;\n    min-width: 40px;\n    max-width: 70px;\n    padding: 15px 25px;\n}\n.footer-btn-p span{\n    text-align: left;\n}\n\n.social-sec{\n    height: 50px;\n}\n.footer-whatsapp-btn{\n    width: 50%;\n    float: left;\n    background: #2d995b;\n    height: 50px;\n    color: #fff;\n}", ""]);
+exports.push([module.i, "* {\n    box-sizing: border-box;\n}\n\nhtml,\nbody {\n    height: 100%;\n}\n\nbody {\n    font: 11px \"Open Sans\", sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    margin: auto;\n    display: flex;\n    flex-flow: column nowrap;\n    justify-content: space-between;\n}\n\nul {\n    list-style: none;\n}\n\na {\n    text-decoration: none;\n}\n\n.generic-anchor {\n    color: #8db9ed;\n}\n.generic-anchor:visited {\n    color: #8db9ed;\n}\n.generic-anchor:hover {\n    color: #ccc;\n}\n\n.flex-rw {\n    display: flex;\n    flex-flow: row wrap;\n    direction: rtl;\n    padding: 20px;\n}\n\nmain {\n    flex: 1 1 auto;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font: 10em \"Oswald\", sans-serif;\n    color: #9b9b9b;\n    line-height: 1;\n}\n\nfooter {\n    /*background: #373737;*/\n    margin-top: auto;\n    width: 100%;\n    background: white;\n    border-top: solid black 2px;\n}\n\nfooter p{\n    text-align: left;\n}\n\n\n.footer-list-top {\n    width: 33.333%;\n    direction: rtl;\n    text-align: justify;\n\n}\n\n.footer-list-top > li {\n    text-align: center;\n    padding-bottom: 10px;\n}\n\n.footer-list-header {\n    padding: 10px 0 5px 0;\n    color: #fff;\n    font: 2.3vw \"Oswald\", sans-serif;\n}\n\n.footer-list-anchor {\n    font: 1.3em \"Open Sans\", sans-serif;\n}\n\n.footer-social-section {\n    width: 100%;\n    align-items: center;\n    justify-content: space-around;\n    position: relative;\n    margin-top: 5px;\n}\n\n.footer-social-section::after {\n    content: \"\";\n    position: absolute;\n    z-index: 1;\n    top: 50%;\n    left: 10px;\n    border-top: 1px solid #ccc;\n    width: calc(100% - 20px);\n}\n\n.footer-social-overlap {\n    position: relative;\n    z-index: 2;\n    background: #373737;\n    padding: 0 20px;\n}\n\n.footer-social-connect {\n    display: flex;\n    align-items: center;\n    font: 3.5em \"Oswald\", sans-serif;\n    color: #fff;\n}\n\n.footer-social-small {\n    font-size: 0.6em;\n    padding: 0px 20px;\n}\n\n.footer-social-overlap > a {\n    font-size: 3em;\n}\n\n.footer-social-overlap > a:not(:first-child) {\n    margin-left: 0.38em;\n}\n\n.footer-bottom-section {\n    width: 100%;\n    padding: 10px;\n    border-top: 1px solid #ccc;\n    margin-top: 10px;\n}\n\n.footer-bottom-section > div:first-child {\n    margin-right: auto;\n}\n\n.footer-bottom-wrapper {\n    font-size: 1.5em;\n    color: #fff;\n}\n\n.footer-address {\n    display: inline;\n    font-style: normal;\n}\n\n@media only screen and (max-width: 768px) {\n    .footer-list-header {\n        font-size: 2em;\n    }\n\n    .footer-list-anchor {\n        font-size: 1.1em;\n    }\n\n    .footer-social-connect {\n        font-size: 2.5em;\n    }\n\n    .footer-social-overlap > a {\n        font-size: 2.24em;\n    }\n\n    .footer-bottom-wrapper {\n        font-size: 1.3em;\n    }\n}\n@media only screen and (max-width: 568px) {\n    main {\n        font-size: 5em;\n    }\n\n    .footer-list-top {\n        width: 100%;\n    }\n\n    .footer-list-header {\n        font-size: 3em;\n    }\n\n    .footer-list-anchor {\n        font-size: 1.5em;\n    }\n\n    .footer-social-section {\n        justify-content: center;\n    }\n\n    .footer-social-section::after {\n        top: 25%;\n    }\n\n    .footer-social-connect {\n        margin-bottom: 10px;\n        padding: 0 10px;\n    }\n\n    .footer-social-overlap {\n        display: flex;\n        justify-content: center;\n    }\n\n    .footer-social-icons-wrapper {\n        width: 100%;\n        padding: 0;\n    }\n\n    .footer-social-overlap > a:not(:first-child) {\n        margin-left: 20px;\n    }\n\n    .footer-bottom-section {\n        padding: 0 5px 10px 5px;\n    }\n\n    .footer-bottom-wrapper {\n        text-align: center;\n        width: 100%;\n        margin-top: 10px;\n    }\n}\n@media only screen and (max-width: 480px) {\n    .footer-social-overlap > a {\n        margin: auto;\n    }\n\n    .footer-social-overlap > a:not(:first-child) {\n        margin-left: 0;\n    }\n\n    .footer-bottom-rights {\n        display: block;\n    }\n}\n@media only screen and (max-width: 320px) {\n    .footer-list-header {\n        font-size: 2.2em;\n    }\n\n    .footer-list-anchor {\n        font-size: 1.2em;\n    }\n\n    .footer-social-connect {\n        font-size: 2.4em;\n    }\n\n    .footer-social-overlap > a {\n        font-size: 2.24em;\n    }\n\n    .footer-bottom-wrapper {\n        font-size: 1.3em;\n    }\n}\n\n\n\n\n.footer_p{\n    font-size:16px;\n    text-align: right;\n    text-align: justify;\n}\n\n\n\n.footer-facebook-btn{\n    width: 50%;\n    float: left;\n    background: #1b4b72;\n    height: 50px;\n    color: #fff;\n}\n\n\n.footer-btn-p{\n    text-align: left;\n    font-size: 22px;\n}\n.footer-btn-p i{\n    width: 30%;\n    min-width: 40px;\n    max-width: 70px;\n    padding: 15px 25px;\n}\n.footer-btn-p span{\n    text-align: left;\n}\n\n.social-sec{\n    height: 50px;\n}\n\n.footer-whatsapp-btn{\n    width: 50%;\n    float: left;\n    background: #2d995b;\n    height: 50px;\n    color: #fff;\n}", ""]);
 
 // exports
 
@@ -6512,6 +6513,44 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 // module
 exports.push([module.i, ".dir-ar{\n    direction: rtl;\n}\n/* The sticky class is added to the navbar with JS when it reaches its scroll position */\n.sticky {\n    position: fixed !important;\n    background-color: #f8f9fa !important;\n    top: 0;\n    width: 100%;\n    /*margin-top: 5px;*/\n    z-index: 1;\n}\n\n/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */\n.sticky + .content {\n    padding-top: 60px;\n}\n\n\n.my-nav {\n    background-color: rgba(0,0,0,0);\n    position: absolute;\n    width:100%;\n    transform-scale:0.5 ;\n    height: 100px;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/Layouts/Navbar/NavbarWithHero.css":
+/*!***************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/Layouts/Navbar/NavbarWithHero.css ***!
+  \***************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".dir-ar{\n    direction: rtl;\n}\n/* The sticky class is added to the navbar with JS when it reaches its scroll position */\n.sticky {\n    position: fixed !important;\n    background-color: #f8f9fa !important;\n    top: 0;\n    width: 100%;\n    /*margin-top: 5px;*/\n    z-index: 1;\n}\n\n/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */\n.sticky + .content {\n    padding-top: 60px;\n}\n\n\n.my-nav {\n    background-color: rgba(0,0,0,0);\n    position: absolute;\n    width:100%;\n    transform-scale:0.5 ;\n    height: 100px;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/Pages/About/About.css":
+/*!***************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/Pages/About/About.css ***!
+  \***************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".about-header{\n    width: 100%;\n    height: 250px;\n    overflow: hidden;\n    border: solid #E9E9E9 1px;\n    padding: 20px;\n    margin-bottom: 10px;\n}\n\n.about_item{\n    text-align: center;\n}\n\n\n.about_item_content{\n    height: 90px;\n    padding: 20px;\n    margin: 100px auto 50px auto;\n}\n\n.about_item_header{\n    color: #ff5050;\n    text-align: right;\n    font-size: 20px;\n}\n\n.about_item_desc{\n    color: white;\n    text-align: right;\n}", ""]);
 
 // exports
 
@@ -79721,6 +79760,7 @@ var map = {
 	"./facebook-ico.png": "./resources/js/Assets/Images/facebook-ico.png",
 	"./grade-logo.png": "./resources/js/Assets/Images/grade-logo.png",
 	"./header_bg.jpg": "./resources/js/Assets/Images/header_bg.jpg",
+	"./inner-bg.jpg": "./resources/js/Assets/Images/inner-bg.jpg",
 	"./mobile-icon.png": "./resources/js/Assets/Images/mobile-icon.png",
 	"./section-1.jpg": "./resources/js/Assets/Images/section-1.jpg",
 	"./section-2.jpg": "./resources/js/Assets/Images/section-2.jpg",
@@ -79830,6 +79870,17 @@ module.exports = "/images/grade-logo.png?85d29e7ee67003e00444275d6ded1fcc";
 /***/ (function(module, exports) {
 
 module.exports = "/images/header_bg.jpg?c3c94eb2d854eff13249a839fd4c3428";
+
+/***/ }),
+
+/***/ "./resources/js/Assets/Images/inner-bg.jpg":
+/*!*************************************************!*\
+  !*** ./resources/js/Assets/Images/inner-bg.jpg ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/inner-bg.jpg?7fe282c16150fcc0f84bd0b03a2af165";
 
 /***/ }),
 
@@ -80500,23 +80551,53 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./resources/js/components/Pages/About/About.js":
-/*!******************************************************!*\
-  !*** ./resources/js/components/Pages/About/About.js ***!
-  \******************************************************/
+/***/ "./resources/js/components/Layouts/Navbar/NavbarWithHero.css":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/Layouts/Navbar/NavbarWithHero.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/postcss-loader/src??ref--6-2!./NavbarWithHero.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/Layouts/Navbar/NavbarWithHero.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/js/components/Layouts/Navbar/NavbarWithHero.js":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/Layouts/Navbar/NavbarWithHero.js ***!
+  \******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Services; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NavbarWithHero; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _NavbarWithHero_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavbarWithHero.css */ "./resources/js/components/Layouts/Navbar/NavbarWithHero.css");
+/* harmony import */ var _NavbarWithHero_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_NavbarWithHero_css__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -80540,24 +80621,187 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Services =
+var NavbarWithHero =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(Services, _Component);
+  _inherits(NavbarWithHero, _Component);
 
-  function Services() {
+  function NavbarWithHero() {
+    _classCallCheck(this, NavbarWithHero);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(NavbarWithHero).apply(this, arguments));
+  }
+
+  _createClass(NavbarWithHero, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "main_nav"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+        id: "navbar",
+        className: "my-nav navbar navbar-expand-lg navbar-light sticky-top"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/",
+        className: "navbar-brand"
+      }, " GradProj "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "navbar-toggler",
+        type: "button",
+        "data-toggle": "collapse",
+        "data-target": "#navbarSupportedContent",
+        "aria-controls": "navbarSupportedContent",
+        "aria-expanded": "false",
+        "aria-label": "Toggle navigation"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "navbar-toggler-icon"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "collapse navbar-collapse",
+        id: "navbarSupportedContent"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "navbar-nav ml-auto dir-ar"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "nav-item "
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+        exact: true,
+        to: "/",
+        className: "nav-link"
+      }, " \u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "sr-only"
+      }, "(current)"), " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "nav-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+        to: "/services",
+        className: "nav-link"
+      }, " \u062E\u062F\u0645\u0627\u062A\u0646\u0627 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "sr-only"
+      }, "(current)"), " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "nav-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+        to: "/projects",
+        className: "nav-link"
+      }, " \u0623\u0641\u0643\u0627\u0631 \u0645\u0634\u0627\u0631\u064A\u0639 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "sr-only"
+      }, "(current)"), " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "nav-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+        exact: true,
+        to: "/who-we-are",
+        className: "nav-link"
+      }, " \u0645\u0646 \u0646\u062D\u0646 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "sr-only"
+      }, "(current)"), " ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "nav-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+        to: "/contact",
+        className: "nav-link"
+      }, " \u062A\u0648\u0627\u0635\u0644 \u0645\u0639\u0646\u0627 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "sr-only"
+      }, "(current)"), " ")))))));
+    }
+  }]);
+
+  return NavbarWithHero;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Pages/About/About.css":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/Pages/About/About.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/postcss-loader/src??ref--6-2!./About.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/Pages/About/About.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/js/components/Pages/About/About.js":
+/*!******************************************************!*\
+  !*** ./resources/js/components/Pages/About/About.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return About; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Layouts_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../Layouts/Footer */ "./resources/js/components/Layouts/Footer.js");
+/* harmony import */ var _Assets_Images_grade_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../../Assets/Images/grade-logo.png */ "./resources/js/Assets/Images/grade-logo.png");
+/* harmony import */ var _Assets_Images_grade_logo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Assets_Images_grade_logo_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _About_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./About.css */ "./resources/js/components/Pages/About/About.css");
+/* harmony import */ var _About_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_About_css__WEBPACK_IMPORTED_MODULE_5__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+
+var About =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(About, _Component);
+
+  function About() {
     var _this;
 
-    _classCallCheck(this, Services);
+    _classCallCheck(this, About);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Services).call(this));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(About).call(this));
     _this.state = {
       services: []
     };
     return _this;
   }
 
-  _createClass(Services, [{
+  _createClass(About, [{
     key: "componentWillMount",
     value: function componentWillMount() {
       var _this2 = this;
@@ -80573,24 +80817,113 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "hero-section d-flex"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container d-flex"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "inner_header_title align-middle align-self-center pt-5"
+      }, "\u0625\u0643\u062A\u0634\u0641 \u0627\u0644\u0645\u0632\u064A\u062F \u0639\u0646 Gradproj"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
-      }, this.state.services.map(function (service) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-          to: "/services/" + service.id
-        }, " ", service.title, " ");
-      }));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row after_header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _Assets_Images_grade_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+        width: "100",
+        height: "100"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: 'align-self-center pr-2 '
+      }, "\u0645\u0646 \u0646\u062D\u0646"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _Assets_Images_grade_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+        width: "100%"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about-desc"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0644\u0648\u0631\u064A\u0645 \u0625\u064A\u0628\u0633\u0648\u0645(Lorem Ipsum) \u0647\u0648 \u0628\u0628\u0633\u0627\u0637\u0629 \u0646\u0635 \u0634\u0643\u0644\u064A (\u0628\u0645\u0639\u0646\u0649 \u0623\u0646 \u0627\u0644\u063A\u0627\u064A\u0629 \u0647\u064A \u0627\u0644\u0634\u0643\u0644 \u0648\u0644\u064A\u0633 \u0627\u0644\u0645\u062D\u062A\u0648\u0649) \u0648\u064A\u064F\u0633\u062A\u062E\u062F\u0645 \u0641\u064A \u0635\u0646\u0627\u0639\u0627\u062A \u0627\u0644\u0645\u0637\u0627\u0628\u0639 \u0648\u062F\u0648\u0631 \u0627\u0644\u0646\u0634\u0631. \u0643\u0627\u0646 \u0644\u0648\u0631\u064A\u0645 \u0625\u064A\u0628\u0633\u0648\u0645 \u0648\u0644\u0627\u064A\u0632\u0627\u0644 \u0627\u0644\u0645\u0639\u064A\u0627\u0631 \u0644\u0644\u0646\u0635 \u0627\u0644\u0634\u0643\u0644\u064A \u0645\u0646\u0630 \u0627\u0644\u0642\u0631\u0646 \u0627\u0644\u062E\u0627\u0645\u0633 \u0639\u0634\u0631 \u0639\u0646\u062F\u0645\u0627 \u0642\u0627\u0645\u062A \u0645\u0637\u0628\u0639\u0629 \u0645\u062C\u0647\u0648\u0644\u0629 \u0628\u0631\u0635 \u0645\u062C\u0645\u0648\u0639\u0629 \u0645\u0646 \u0627\u0644\u0623\u062D\u0631\u0641 \u0628\u0634\u0643\u0644 \u0639\u0634\u0648\u0627\u0626\u064A \u0623\u062E\u0630\u062A\u0647\u0627 \u0645\u0646 \u0646\u0635\u060C \u0644\u062A\u0643\u0648\u0651\u0646 \u0643\u062A\u064A\u0651\u0628 \u0628\u0645\u062B\u0627\u0628\u0629 \u062F\u0644\u064A\u0644 \u0623\u0648 \u0645\u0631\u062C\u0639 \u0634\u0643\u0644\u064A \u0644\u0647\u0630\u0647 \u0627\u0644\u0623\u062D\u0631\u0641. \u062E\u0645\u0633\u0629 \u0642\u0631\u0648\u0646 \u0645\u0646 \u0627\u0644\u0632\u0645\u0646 \u0644\u0645 \u062A\u0642\u0636\u064A \u0639\u0644\u0649 \u0647\u0630\u0627 \u0627\u0644\u0646\u0635\u060C \u0628\u0644 \u0627\u0646\u0647 \u062D\u062A\u0649 \u0635\u0627\u0631 \u0645\u0633\u062A\u062E\u062F\u0645\u0627\u064B \u0648\u0628\u0634\u0643\u0644\u0647 \u0627\u0644\u0623\u0635\u0644\u064A \u0641\u064A \u0627\u0644\u0637\u0628\u0627\u0639\u0629 \u0648\u0627\u0644\u062A\u0646\u0636\u064A\u062F \u0627\u0644\u0625\u0644\u0643\u062A\u0631\u0648\u0646\u064A. \u0627\u0646\u062A\u0634\u0631 \u0628\u0634\u0643\u0644 \u0643\u0628\u064A\u0631 \u0641\u064A \u0633\u062A\u064A\u0646\u064A\u0651\u0627\u062A \u0647\u0630\u0627 \u0627\u0644\u0642\u0631\u0646 \u0645\u0639 \u0625\u0635\u062F\u0627\u0631 \u0631\u0642\u0627\u0626\u0642 \"\u0644\u064A\u062A\u0631\u0627\u0633\u064A\u062A\" (Letraset) \u0627\u0644\u0628\u0644\u0627\u0633\u062A\u064A\u0643\u064A\u0629 \u062A\u062D\u0648\u064A \u0645\u0642\u0627\u0637\u0639 \u0645\u0646 \u0647\u0630\u0627 \u0627\u0644\u0646\u0635\u060C \u0648\u0639\u0627\u062F \u0644\u064A\u0646\u062A\u0634\u0631 \u0645\u0631\u0629 \u0623\u062E\u0631\u0649 \u0645\u0624\u062E\u0631\u0627\u064E \u0645\u0639 \u0638\u0647\u0648\u0631 \u0628\u0631\u0627\u0645\u062C \u0627\u0644\u0646\u0634\u0631 \u0627\u0644\u0625\u0644\u0643\u062A\u0631\u0648\u0646\u064A \u0645\u062B\u0644 \"\u0623\u0644\u062F\u0648\u0633 \u0628\u0627\u064A\u062C \u0645\u0627\u064A\u0643\u0631\" (Aldus PageMaker) \u0648\u0627\u0644\u062A\u064A \u062D\u0648\u062A \u0623\u064A\u0636\u0627\u064B \u0639\u0644\u0649 \u0646\u0633\u062E \u0645\u0646 \u0646\u0635 \u0644\u0648\u0631\u064A\u0645 \u0625\u064A\u0628\u0633\u0648\u0645."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-6"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _Assets_Images_grade_logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+        width: "100%"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about-desc"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u0644\u0648\u0631\u064A\u0645 \u0625\u064A\u0628\u0633\u0648\u0645(Lorem Ipsum) \u0647\u0648 \u0628\u0628\u0633\u0627\u0637\u0629 \u0646\u0635 \u0634\u0643\u0644\u064A (\u0628\u0645\u0639\u0646\u0649 \u0623\u0646 \u0627\u0644\u063A\u0627\u064A\u0629 \u0647\u064A \u0627\u0644\u0634\u0643\u0644 \u0648\u0644\u064A\u0633 \u0627\u0644\u0645\u062D\u062A\u0648\u0649) \u0648\u064A\u064F\u0633\u062A\u062E\u062F\u0645 \u0641\u064A \u0635\u0646\u0627\u0639\u0627\u062A \u0627\u0644\u0645\u0637\u0627\u0628\u0639 \u0648\u062F\u0648\u0631 \u0627\u0644\u0646\u0634\u0631. \u0643\u0627\u0646 \u0644\u0648\u0631\u064A\u0645 \u0625\u064A\u0628\u0633\u0648\u0645 \u0648\u0644\u0627\u064A\u0632\u0627\u0644 \u0627\u0644\u0645\u0639\u064A\u0627\u0631 \u0644\u0644\u0646\u0635 \u0627\u0644\u0634\u0643\u0644\u064A \u0645\u0646\u0630 \u0627\u0644\u0642\u0631\u0646 \u0627\u0644\u062E\u0627\u0645\u0633 \u0639\u0634\u0631 \u0639\u0646\u062F\u0645\u0627 \u0642\u0627\u0645\u062A \u0645\u0637\u0628\u0639\u0629 \u0645\u062C\u0647\u0648\u0644\u0629 \u0628\u0631\u0635 \u0645\u062C\u0645\u0648\u0639\u0629 \u0645\u0646 \u0627\u0644\u0623\u062D\u0631\u0641 \u0628\u0634\u0643\u0644 \u0639\u0634\u0648\u0627\u0626\u064A \u0623\u062E\u0630\u062A\u0647\u0627 \u0645\u0646 \u0646\u0635\u060C \u0644\u062A\u0643\u0648\u0651\u0646 \u0643\u062A\u064A\u0651\u0628 \u0628\u0645\u062B\u0627\u0628\u0629 \u062F\u0644\u064A\u0644 \u0623\u0648 \u0645\u0631\u062C\u0639 \u0634\u0643\u0644\u064A \u0644\u0647\u0630\u0647 \u0627\u0644\u0623\u062D\u0631\u0641. \u062E\u0645\u0633\u0629 \u0642\u0631\u0648\u0646 \u0645\u0646 \u0627\u0644\u0632\u0645\u0646 \u0644\u0645 \u062A\u0642\u0636\u064A \u0639\u0644\u0649 \u0647\u0630\u0627 \u0627\u0644\u0646\u0635\u060C \u0628\u0644 \u0627\u0646\u0647 \u062D\u062A\u0649 \u0635\u0627\u0631 \u0645\u0633\u062A\u062E\u062F\u0645\u0627\u064B \u0648\u0628\u0634\u0643\u0644\u0647 \u0627\u0644\u0623\u0635\u0644\u064A \u0641\u064A \u0627\u0644\u0637\u0628\u0627\u0639\u0629 \u0648\u0627\u0644\u062A\u0646\u0636\u064A\u062F \u0627\u0644\u0625\u0644\u0643\u062A\u0631\u0648\u0646\u064A. \u0627\u0646\u062A\u0634\u0631 \u0628\u0634\u0643\u0644 \u0643\u0628\u064A\u0631 \u0641\u064A \u0633\u062A\u064A\u0646\u064A\u0651\u0627\u062A \u0647\u0630\u0627 \u0627\u0644\u0642\u0631\u0646 \u0645\u0639 \u0625\u0635\u062F\u0627\u0631 \u0631\u0642\u0627\u0626\u0642 \"\u0644\u064A\u062A\u0631\u0627\u0633\u064A\u062A\" (Letraset) \u0627\u0644\u0628\u0644\u0627\u0633\u062A\u064A\u0643\u064A\u0629 \u062A\u062D\u0648\u064A \u0645\u0642\u0627\u0637\u0639 \u0645\u0646 \u0647\u0630\u0627 \u0627\u0644\u0646\u0635\u060C \u0648\u0639\u0627\u062F \u0644\u064A\u0646\u062A\u0634\u0631 \u0645\u0631\u0629 \u0623\u062E\u0631\u0649 \u0645\u0624\u062E\u0631\u0627\u064E \u0645\u0639 \u0638\u0647\u0648\u0631 \u0628\u0631\u0627\u0645\u062C \u0627\u0644\u0646\u0634\u0631 \u0627\u0644\u0625\u0644\u0643\u062A\u0631\u0648\u0646\u064A \u0645\u062B\u0644 \"\u0623\u0644\u062F\u0648\u0633 \u0628\u0627\u064A\u062C \u0645\u0627\u064A\u0643\u0631\" (Aldus PageMaker) \u0648\u0627\u0644\u062A\u064A \u062D\u0648\u062A \u0623\u064A\u0636\u0627\u064B \u0639\u0644\u0649 \u0646\u0633\u062E \u0645\u0646 \u0646\u0635 \u0644\u0648\u0631\u064A\u0645 \u0625\u064A\u0628\u0633\u0648\u0645."))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        id: "stats",
+        className: "hero"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "inner"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "inner_headers"
+      }, "\u062E\u0637\u0648\u0627\u062A \u0627\u0644\u0639\u0645\u0644"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "info"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header_under_line center"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-4 about_item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_content"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_header"
+      }, "\u0625\u064A\u062C\u0627\u062F \u0627\u0644\u0641\u0643\u0631\u0629"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_desc"
+      }, "\u0646\u0639\u0645\u0644 \u0639\u0644\u0649 \u0625\u064A\u062C\u0627\u062F \u0627\u0644\u0641\u0643\u0631\u0629 \u0627\u0644\u0645\u0646\u0627\u0633\u0628\u0629 \u0644\u0644\u0645\u0634\u0631\u0648\u0639 \u0648\u0643\u064A\u0641\u064A\u0629 \u0625\u062F\u0627\u0631\u062A\u0647\u0627 \u0648\u0627\u0644\u0648\u0642\u062A \u0627\u0644\u0645\u062A\u0627\u062D \u0644\u0647\u0627"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-4 about_item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_content"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_header"
+      }, "\u0627\u0644\u062C\u0632\u0621 \u0627\u0644\u0646\u0638\u0631\u0649"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_desc"
+      }, "\u0646\u0646\u0634\u0623 \u0627\u0644\u0645\u0644\u0641 \u0627\u0644\u0646\u0638\u0631\u0649 \u0627\u0644\u062E\u0627\u0635 \u0628\u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0648\u062A\u0633\u0644\u064A\u0645 \u0643\u0644 \u062C\u0632\u0621 \u0639\u0644\u0649 \u062D\u0633\u0628 \u0627\u0644\u062D\u0627\u062C\u0629 \u0625\u0633\u0628\u0648\u0639\u064A\u0627 \u0627\u0648 \u0634\u0647\u0631\u064A\u0627\u064B"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-4 about_item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_content"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_header"
+      }, "\u0627\u0644\u062C\u0632\u0621 \u0627\u0644\u0639\u0645\u0644\u0649"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_desc"
+      }, "\u0646\u0639\u0645\u0644 \u0639\u0644\u0649 \u0627\u0644\u0623\u0643\u0648\u0627\u062F \u0627\u0644\u062E\u0627\u0635\u0629 \u0628\u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0648\u062A\u0633\u0644\u064A\u0645 \u0643\u0644 \u062C\u0632\u0621 \u062D\u0633\u0628 \u0627\u0644\u062D\u0627\u062C\u0629"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-4 about_item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_content"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_header"
+      }, "\u0627\u0644\u0625\u062E\u062A\u0628\u0627\u0631"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_desc"
+      }, "\u0628\u0639\u062F \u0627\u0644\u0625\u0646\u062A\u0647\u0627\u0621 \u0645\u0646 \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0646\u0641\u0648\u0645 \u0628\u0639\u0645\u0644 \u0625\u062E\u062A\u0628\u0627\u0631 \u0643\u0627\u0645\u0644 \u0644\u0644\u062A\u0623\u0643\u062F \u0645\u0646 \u0643\u0641\u0627\u0621\u0629 \u0627\u0644\u0645\u0634\u0631\u0648\u0639"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-4 about_item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_content"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_header"
+      }, "\u0627\u0644\u0634\u0631\u062D"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_desc"
+      }, "\u0646\u0642\u0648\u0645 \u0628\u0634\u0631\u062D \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0628\u0627\u0644\u0643\u0627\u0645\u0644 \u0645\u0646 \u0628\u062F\u0627\u064A\u062A\u0647 \u0648\u062D\u062A\u0649 \u0627\u0644\u0623\u0643\u0648\u0627\u062F \u0627\u0644\u0623\u062E\u064A\u0631\u0629 \u0644\u0647 \u0628\u0627\u0644\u0638\u0631\u064A\u0642\u0629 \u0627\u0644\u0645\u0646\u0627\u0633\u0628\u0629 \u0633\u0648\u0627\u0621 \u062A\u0633\u062C\u064A\u0644\u0627\u062A \u0641\u064A\u062F\u064A\u0648 \u0627\u0648 \u0634\u0631\u062D \u0627\u0648\u0646 \u0644\u0627\u064A\u0646 ..."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-4 about_item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_content"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_header"
+      }, "\u0627\u0644\u062A\u062C\u0647\u064A\u0632 \u0644\u0644\u0645\u0646\u0627\u0642\u0634\u0629"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "about_item_desc"
+      }, "\u0646\u0642\u0648\u0645 \u0628\u062A\u062C\u0647\u064A\u0632 \u0623\u0639\u0636\u0627\u0621 \u0627\u0644\u0645\u0634\u0631\u0648\u0639 \u0644\u0644\u0645\u0646\u0627\u0642\u0634\u0629 \u0648\u0627\u0644\u0631\u062F \u0639\u0644\u0649 \u062C\u0645\u064A\u0639 \u0627\u0644\u0623\u0633\u0626\u0644\u0629"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "why-us"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Layouts_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
     }
   }]);
 
-  return Services;
+  return About;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
-
-if (document.getElementById('example')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Services, null), document.getElementById('example'));
-}
 
 /***/ }),
 
@@ -82195,11 +82528,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_preloaders__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_preloaders__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _components_Layouts_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Layouts/Navbar/Navbar */ "./resources/js/components/Layouts/Navbar/Navbar.js");
 /* harmony import */ var _components_Layouts_Navbar_InnerNavbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Layouts/Navbar/InnerNavbar */ "./resources/js/components/Layouts/Navbar/InnerNavbar.js");
-/* harmony import */ var _components_Routes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Routes */ "./resources/js/components/Routes.js");
-/* harmony import */ var history_createBrowserHistory__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! history/createBrowserHistory */ "./node_modules/history/createBrowserHistory.js");
-/* harmony import */ var history_createBrowserHistory__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(history_createBrowserHistory__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/index.js");
-/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_transition_group__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_Layouts_Navbar_NavbarWithHero__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Layouts/Navbar/NavbarWithHero */ "./resources/js/components/Layouts/Navbar/NavbarWithHero.js");
+/* harmony import */ var _components_Routes__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Routes */ "./resources/js/components/Routes.js");
+/* harmony import */ var history_createBrowserHistory__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! history/createBrowserHistory */ "./node_modules/history/createBrowserHistory.js");
+/* harmony import */ var history_createBrowserHistory__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(history_createBrowserHistory__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/index.js");
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react_transition_group__WEBPACK_IMPORTED_MODULE_12__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -82231,7 +82565,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var history = history_createBrowserHistory__WEBPACK_IMPORTED_MODULE_10___default()();
+
+var history = history_createBrowserHistory__WEBPACK_IMPORTED_MODULE_11___default()();
 
 var Index =
 /*#__PURE__*/
@@ -82253,8 +82588,10 @@ function (_Component) {
   _createClass(Index, [{
     key: "updateNavBar",
     value: function updateNavBar(nav) {
-      nav === '/' || nav === '' ? this.setState({
+      nav === '/' || nav === '' || nav === '/who-we-are' ? this.setState({
         navbar: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layouts_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_7__["default"], null)
+      }) : nav === '/who-we-are' ? this.setState({
+        navbar: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layouts_Navbar_NavbarWithHero__WEBPACK_IMPORTED_MODULE_9__["default"], null)
       }) : this.setState({
         navbar: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layouts_Navbar_InnerNavbar__WEBPACK_IMPORTED_MODULE_8__["default"], null)
       });
@@ -82283,7 +82620,7 @@ function (_Component) {
         height: 5
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "App"
-      }, this.state.navbar, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Routes__WEBPACK_IMPORTED_MODULE_9__["default"], null)))));
+      }, this.state.navbar, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Routes__WEBPACK_IMPORTED_MODULE_10__["default"], null)))));
     }
   }]);
 
